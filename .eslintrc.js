@@ -1,11 +1,11 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2020": true
+        "es2020": true,
+        "node": true
     },
     "extends": [
         "airbnb",
-        "airbnb/hooks",
         "eslint:recommended",
         "plugin:react/recommended"
     ],

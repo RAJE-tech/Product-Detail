@@ -1,52 +1,43 @@
 {
-  "name": "product-detail",
+  "name": "related-items",
   "version": "1.0.0",
-  "description": "A front end product module which makes calls to the Greenfield API and visualized the data",
-  "main": "app.js",
+  "description": "Related Items & Comparison module for BRAC Retail Model",
+  "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open --hot --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RAJE-tech/Product-Detail.git"
+    "url": "git+https://github.com/RAJE-tech/related-items.git"
   },
-  "author": "andy seracuse",
-  "license": "MIT",
+  "author": "Erik Shelton",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RAJE-tech/Product-Detail/issues"
+    "url": "https://github.com/RAJE-tech/related-items/issues"
   },
-  "homepage": "https://github.com/RAJE-tech/Product-Detail#readme",
+  "homepage": "https://github.com/RAJE-tech/related-items#readme",
   "dependencies": {
     "axios": "^0.20.0",
-    "boostrap": "^2.0.0",
-    "cors": "^2.8.5",
-    "jest": "^26.4.2",
+    "bootstrap": "^4.5.2",
+    "css-loader": "^4.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "reactstrap": "^8.6.0"
+    "reactstrap": "^8.6.0",
+    "style-loader": "^1.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
-    "autoprefixer": "^10.0.0",
     "babel-loader": "^8.1.0",
-    "css-loader": "^4.3.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.21.0",
+    "eslint-plugin-react": "^7.21.1",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "file-loader": "^6.1.0",
-    "html-webpack-plugin": "^3.2.0",
-    "postcss-loader": "^4.0.2",
-    "style-loader": "^1.2.1",
-    "url-loader": "^4.1.0",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-cli": "^3.3.12"
   }
 }

@@ -1,7 +1,10 @@
 import React from 'react';
+import ProductCard from './ProductCard.jsx'
 
-function App() {
-  return <div>goodbye</div>;
-}
+const App = () => (
+  <div>
+    <ProductCard></ProductCard>
+  </div>
+);
 
 export default App;
