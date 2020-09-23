@@ -1,7 +1,7 @@
 import React from 'react';
 
 function App(props) {
-  return(<div>goodbye</div>)
+  return <div>hello</div>;
 }
 
-export default App
+export default App;
