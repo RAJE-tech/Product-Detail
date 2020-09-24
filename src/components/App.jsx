@@ -1,10 +1,11 @@
-import React from 'react';
-import ProductCard from './ProductCard.jsx'
+import React, { useState } from 'react';
 
-const App = () => (
-  <div>
-    <ProductCard></ProductCard>
-  </div>
-);
+function App(props) {
+  return (
+    <div className="container">
+      <div className="test"></div>
+    </div>
+  )
+}
 
 export default App;
