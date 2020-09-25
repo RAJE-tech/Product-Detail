@@ -1,2 +1,2 @@
 node_modules
-bundle.js
+bundle.jsdebug.log $ git rm --cached bundle.js rm bundle.js $ git commit -m Start ignoring bundle.js
