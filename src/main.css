@@ -23,8 +23,6 @@ img{
 
 .ajs-carousel-indicators{
   align-items: flex-end;
-  max-width: 100%;
-  overflow: auto;
 }
 
 .ajs-indicator-image{

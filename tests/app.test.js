@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { shallow } from 'enzyme'
 import dummyData from './dummyStyle.js'
 import axios from 'axios';
 import App from '../src/components/App.jsx'
+
 jest.mock('axios');
+jest.spyOn(React, 'useEffect').mockImplementationOnce(f => f());
 
 describe('Carousel Displays pictures for a style', () => {
   axios.get.mockResolvedValue({
