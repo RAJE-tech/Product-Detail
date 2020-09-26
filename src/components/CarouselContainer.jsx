@@ -3,16 +3,16 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
-  CarouselCaption,
+  // CarouselIndicators
 } from 'reactstrap';
+import CarouselIndicators from './CarouselIndicators.jsx';
 
 const CarouselContainer = ({ photos }) => {
   const items = [];
   const thumbnails = [];
   for (let i = 0; i < photos.length; i++) {
     items.push({ src: photos[i].url });
-    thumbnails.push({ src: photos[i].thumbnail });
+    thumbnails.push({ src: photos[i].thumbnail_url });
   }
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -42,25 +42,28 @@ const CarouselContainer = ({ photos }) => {
         key={item.src}
       >
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
   });
 
   return (
-    <div className="carouselContainer">
+    <div className="ajs-carouselContainer">
       <Carousel
         activeIndex={activeIndex}
         next={next}
         previous={previous}
         interval={false}
       >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        <CarouselIndicators
+          items={thumbnails}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
         {slides}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
       </Carousel>
-      </div>
+    </div>
   );
 };
 
