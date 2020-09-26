@@ -6,7 +6,7 @@ function App(props) {
   const [style, setStyle] = useState({ photos: [{ url: '', thumbnail: '' }] });
   const getStyle = () => {
     return axios.get('http://52.26.193.201:3000/products/1/styles').then((response) => {
-      setStyle(response.data.results[1]);
+      setStyle(response.data.results[3]);
     });
   };
 

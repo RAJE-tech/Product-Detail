@@ -9,7 +9,7 @@ function CarouselIndicators({ items, activeIndex, onClickHandler }) {
             key={index}
             onClick={() => onClickHandler(index)}
           >
-            <img src={item.src}/>
+            <img src={item.src} className="ajs-indicator-image"/>
             <li
               className={activeIndex === index ? 'active' : ''}
             />

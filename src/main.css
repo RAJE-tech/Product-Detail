@@ -23,4 +23,15 @@ img{
 
 .ajs-carousel-indicators{
   align-items: flex-end;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.ajs-indicator-image{
+  width: 100%
+}
+
+.carouselItem{
+  display: flex;
+  flex-direction: row;
 }
