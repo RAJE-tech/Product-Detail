@@ -4,8 +4,6 @@
   justify-content: center;
   height: 500px;
 }
-
-
 .carousel{
   width:100%;
   height: 100%;
@@ -15,21 +13,28 @@
   justify-content: center;
   height: 500px;
 }
-
 img{
   max-height: 100%;
   max-width: 100%
 }
-
 .ajs-carousel-indicators{
   align-items: flex-end;
 }
-
 .ajs-indicator-image{
   width: 100%
 }
-
 .carouselItem{
   display: flex;
   flex-direction: row;
+}
+.ajs-top-half{
+  display: flex;
+  flex-direction: row;
+}
+.ajs-product-name{
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.ajs-customer-interaction-container {
+  margin-left: 10%;
 }

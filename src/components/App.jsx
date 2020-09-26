@@ -1,18 +1,19 @@
 import React from 'react';
 import axios from 'axios';
 import CarouselContainer from './CarouselContainer.jsx';
+import CustomerInteraction from './CustomerInteraction.jsx'
 
 function App() {
   const [product, setProduct] = React.useState({
-    id: null,
-    name: null,
-    slogan: null,
-    description: null,
-    category: null,
-    default_price: null,
+    id: 0,
+    name: '',
+    slogan: '',
+    description: '',
+    category: '',
+    default_price: 0,
     features: [{
-      feature: null,
-      value: null,
+      feature: '',
+      value: '',
     }],
   });
   const getProduct = () => axios.get('http://52.26.193.201:3000/products/1')
@@ -54,10 +55,17 @@ function App() {
 
   return (
     <div className="container">
-      <div className="row">
+      <div className="row ajs-top-half no-gutters">
         <div className="col-md-8">
           <CarouselContainer photos={styles[styleIndex].photos} />
-          {/* <CustomerInteraction /> */}
+        </div>
+        <div className="col-md-4">
+          <CustomerInteraction
+            product={product}
+            styles={styles}
+            styleIndex={styleIndex}
+            setStyleIndex={setStyleIndex}
+          />
         </div>
       </div>
     </div>
