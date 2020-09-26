@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { shallow } from 'enzyme'
 import dummyData from './dummyStyle.js'
 import axios from 'axios';
@@ -10,10 +10,12 @@ describe('Carousel Displays pictures for a style', () => {
     data: dummyData
   })
   
-  const app = shallow(<App />)
+
+  
   test('sets the state of the style after a get request', () => {
-      let CarouselContainer = app.find('CarouselContainer')
-      expect(CarouselContainer.prop('photos')).toEqual(dummyData.results[1].photos)
+    const app = shallow(<App />)
+    let CarouselContainer = app.find('CarouselContainer')
+    expect(CarouselContainer.prop('photos')).toEqual(dummyData.results[1].photos)
     }
   )
 })
