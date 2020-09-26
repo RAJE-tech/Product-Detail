@@ -48,7 +48,7 @@ const CarouselContainer = ({ photos }) => {
   });
 
   return (
-    <div className="w-75 carouselContainer">
+    <div className="carouselContainer">
       <Carousel
         activeIndex={activeIndex}
         next={next}

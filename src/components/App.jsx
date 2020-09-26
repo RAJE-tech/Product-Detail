@@ -16,7 +16,11 @@ function App(props) {
 
   return (
     <div className="container">
-      <CarouselContainer photos={style.photos} />
+      <div className="row">
+        <div className="col-md-8">
+          <CarouselContainer photos={style.photos} />
+        </div>
+      </div>
     </div>
   );
 }
