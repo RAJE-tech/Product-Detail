@@ -7,15 +7,18 @@ import App from '../src/components/App.jsx'
 jest.mock('axios');
 jest.spyOn(React, 'useEffect').mockImplementationOnce(f => f());
 
-describe('Carousel Displays pictures for a style', () => {
+describe('test', () => {
   axios.get.mockResolvedValue({
     data: dummyData
   })
   
-
+  beforeEach(()=> {
+    let app = shallow(<App />, {disableLifecycleMethods: true})
+  })
   
-  test('sets the state of the style after a get request', () => {
-    const app = shallow(<App />)
+  test('this is a test', () => {
+    
+    const didMount = app.instance().componentDidMount()
     let CarouselContainer = app.find('CarouselContainer')
     expect(CarouselContainer.prop('photos')).toEqual(dummyData.results[1].photos)
     }
