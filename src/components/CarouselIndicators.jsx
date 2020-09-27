@@ -2,21 +2,22 @@ import React from 'react';
 
 function CarouselIndicators({ items, activeIndex, onClickHandler }) {
   return (
-    <ol className="carousel-indicators ajs-carousel-indicators">
+    <div className="carousel-indicators">
       {items.map((item, index) => {
         return (
           <div
             key={index}
             onClick={() => onClickHandler(index)}
+            className="ajs-carousel-indicator"
           >
-            <img src={item.src} className="ajs-indicator-image"/>
+            <img src={item.src}/>
             <li
               className={activeIndex === index ? 'active' : ''}
             />
           </div>
         );
       })}
-    </ol>
+    </div>
   );
 }
 

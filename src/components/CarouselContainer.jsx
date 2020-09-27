@@ -3,7 +3,6 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  // CarouselIndicators
 } from 'reactstrap';
 import CarouselIndicators from './CarouselIndicators.jsx';
 
