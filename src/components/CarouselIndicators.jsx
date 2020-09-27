@@ -2,7 +2,7 @@ import React from 'react';
 
 function CarouselIndicators({ items, activeIndex, onClickHandler }) {
   return (
-    <div className="ajs-carousel-indicators">
+    <div className="carousel-indicators">
       {items.map((item, index) => {
         return (
           <div
@@ -11,7 +11,7 @@ function CarouselIndicators({ items, activeIndex, onClickHandler }) {
             className="ajs-carousel-indicator"
           >
             <img src={item.src}/>
-            <div
+            <li
               className={activeIndex === index ? 'active' : ''}
             />
           </div>
