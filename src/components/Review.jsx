@@ -9,11 +9,15 @@ function Review({ ratings }) {
     total += ratings[key];
   }
   const avgRating = weightedTotal / total;
-  const roundedAvg = (Math.round(avgRating * 4) / 4).toFixed(2);
 
   return (
-    <div>
-      <Rating name="half-rating-read" defaultValue={Number(roundedAvg)} precision={0.5} readOnly />
+    <div className={total === 0 || NaN ? 'hidden' : ''}>
+      <Rating
+        name="simple-controlled"
+        value={avgRating}
+        precision={0.25}
+        readOnly
+      />
       <a href="#">Read all reviews</a>
     </div>
   );

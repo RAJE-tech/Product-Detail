@@ -9,10 +9,11 @@ function CustomerInteraction({
   styles,
   styleIndex,
   setStyleIndex,
+  ratings
 }) {
   return (
     <div className="ajs-customer-interaction-container">
-      <Review />
+      <Review ratings={ratings} />
       <LimitedInfo
         product={product}
         styles={styles}
