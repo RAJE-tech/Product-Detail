@@ -48,9 +48,14 @@ function App() {
 
   const [styleIndex, setStyleIndex] = React.useState(0);
 
+  const [ratings, setRatings] = React.useState(0);
+  const getRatings = () => axios.get('http://52.26.193.201:3000/reviews/1/meta')
+    .then((response) => setRatings(response.data.ratings));
+
   React.useEffect(() => {
     getProduct();
     getStyles();
+    getRatings();
   }, []);
 
   return (
@@ -65,6 +70,7 @@ function App() {
             styles={styles}
             styleIndex={styleIndex}
             setStyleIndex={setStyleIndex}
+            ratings={ratings}
           />
         </div>
       </div>
