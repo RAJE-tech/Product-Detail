@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/RAJE-tech/related-items#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "axios": "^0.20.0",
     "babel-jest": "^26.3.0",
     "bootstrap": "^4.5.2",

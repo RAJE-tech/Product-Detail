@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Review({ product, styles, styleIndex }) {
+function LimitedInfo({ product, styles, styleIndex }) {
   const price = styles[styleIndex].sale_price !== '0' ? styles[styleIndex].sale_price: styles[styleIndex].original_price
   return (
     <div>
@@ -13,4 +13,4 @@ function Review({ product, styles, styleIndex }) {
   );
 }
 
-export default Review;
+export default LimitedInfo;

@@ -23,7 +23,7 @@ function App() {
 
   const [styles, setStyles] = React.useState([
     {
-      style_id: null,
+      style_id: 0,
       name: null,
       original_price: null,
       sale_price: null,
@@ -56,10 +56,10 @@ function App() {
   return (
     <div className="container">
       <div className="row ajs-top-half no-gutters">
-        <div className="col-md-8">
+        <div className="col-md-8 col-12">
           <CarouselContainer photos={styles[styleIndex].photos} />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 col-12">
           <CustomerInteraction
             product={product}
             styles={styles}
