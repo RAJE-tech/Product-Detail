@@ -81,6 +81,7 @@ p{
   align-items: center;
   height: 100%;
   margin: 5%;
+  justify-content: center;;
 }
 .ajs-feature-title{
   font-weight: 900;
@@ -92,11 +93,12 @@ p{
   .ajs-vr{
     height: 5px;
     background-color: #343434;
+    width: 80%;
   }
 }
 @media(min-width: 576px){
   .ajs-vr-inside{
-    height: 75%;
+    height: 80%;
     width: 5px;
     background-color: #343434;
   }
@@ -104,7 +106,8 @@ p{
 .ajs-product-overview{
   display: flex;
   flex-direction: row;
-  padding: 2%
+  padding: 2%;
+  justify-content: center;
 }
 .ajs-product-description{
   display: flex;
@@ -114,4 +117,12 @@ p{
   display: flex;
   flex-direction: column;
   margin: 2%;
+}
+.ajs-slogan{
+  font-weight: 900;
+}
+.ajs-feature img{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }

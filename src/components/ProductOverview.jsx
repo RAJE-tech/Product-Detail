@@ -15,7 +15,7 @@ function ProductOverview({ product }) {
         </div>
         <div className="ajs-vr-inside" />
       </div>
-      <div className="ajs-vr col-12 col-sm-1" />
+      <div className="ajs-vr" />
       <div className="col-12 col-sm-4">
         <Features features={product.features} />
       </div>
