@@ -13,7 +13,7 @@ function SelectSize({ skus, setSelectedSize }) {
         </DropdownToggle>
       </Dropdown>
     );
-  } 
+  }
   return (
     <Dropdown isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle caret>
