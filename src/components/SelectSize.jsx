@@ -18,11 +18,11 @@ function SelectSize({ skus, setSelectedSize }) {
         </DropdownToggle>
       </Dropdown>
     );
-  } 
+  }
   return (
     <Dropdown isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle caret>
-        Dropdown
+        Select Size
       </DropdownToggle>
       <DropdownMenu>
         {Object.keys(skus).map((size) => <DropdownItem onClick={() => setSelectedSize(size)} key={size}>{size}</DropdownItem>)}
