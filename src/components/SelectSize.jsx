@@ -6,7 +6,7 @@ import {
   DropdownItem
 } from 'reactstrap';
 
-function SelectSize({ skus, setSelectedSize }) {
+function SelectSize({ skus, setSelectedSize, selectedSize }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen(prevState => !prevState);
@@ -22,7 +22,7 @@ function SelectSize({ skus, setSelectedSize }) {
   return (
     <Dropdown isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle caret>
-        Select Size
+        {selectedSize === null ? 'SELECT SIZE' : selectedSize}
       </DropdownToggle>
       <DropdownMenu>
         {Object.keys(skus).map((size) => <DropdownItem onClick={() => setSelectedSize(size)} key={size}>{size}</DropdownItem>)}

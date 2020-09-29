@@ -72,6 +72,7 @@ function App() {
             styleIndex={styleIndex}
             setStyleIndex={setStyleIndex}
             ratings={ratings}
+            productId={productId}
           />
         </div>
       </div>
