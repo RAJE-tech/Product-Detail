@@ -51,6 +51,7 @@ function AddToCart({ selectedStyle, productId }) {
             selectedSize={selectedSize}
             addToCart={addToCart}
             handleSelectSize={handleSelectSize}
+            skus={selectedStyle.skus}
           />
         </div>
       </div>

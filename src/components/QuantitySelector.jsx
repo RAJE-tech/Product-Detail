@@ -14,7 +14,7 @@ function QuantitySelector({ availableQuantity, selectedQuantity, setSelectedQuan
   }
 
   const toggle = () => setDropdownOpen(prevState => !prevState);
-  if (availableQuantity === undefined) {
+  if (!availableQuantity) {
     return (
       <Dropdown isOpen={dropdownOpen} toggle={toggle}>
         <DropdownToggle disabled>

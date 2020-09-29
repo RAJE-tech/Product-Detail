@@ -12,7 +12,7 @@ function SelectSize({ skus, setSelectedSize, selectedSize, setSelectSizeOpen, se
     return (
       <Dropdown isOpen={selectSizeOpen} toggle={toggle}>
         <DropdownToggle disabled>
-          -
+          OUT OF STOCK
         </DropdownToggle>
       </Dropdown>
     );
