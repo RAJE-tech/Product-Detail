@@ -134,3 +134,11 @@
   height: 25px;
   margin-right: 10px;
 }
+.select-size-alert{
+  width: 100%;
+  background-color: #fff9c4;
+  padding: 2%
+}
+.ajs-add-to-cart .dropdown{
+  margin-bottom: 10%;
+}
