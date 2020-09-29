@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 
-function AddButton({ addToCart, selectedSize, handleSelectSize}) {
+function AddButton({ addToCart, selectedSize, handleSelectSize }) {
   let clickHandler;
   if (selectedSize === null) {
     clickHandler = handleSelectSize;

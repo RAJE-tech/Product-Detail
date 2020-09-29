@@ -3,16 +3,14 @@ import {
   Dropdown,
   DropdownMenu,
   DropdownToggle,
-  DropdownItem
+  DropdownItem,
 } from 'reactstrap';
 
-function SelectSize({ skus, setSelectedSize, selectedSize }) {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggle = () => setDropdownOpen(prevState => !prevState);
+function SelectSize({ skus, setSelectedSize, selectedSize, setSelectSizeOpen, selectSizeOpen }) {
+  const toggle = () => setSelectSizeOpen(prevState => !prevState);
   if (skus.null !== undefined) {
     return (
-      <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+      <Dropdown isOpen={selectSizeOpen} toggle={toggle}>
         <DropdownToggle disabled>
           -
         </DropdownToggle>
@@ -20,7 +18,7 @@ function SelectSize({ skus, setSelectedSize, selectedSize }) {
     );
   }
   return (
-    <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+    <Dropdown isOpen={selectSizeOpen} toggle={toggle}>
       <DropdownToggle caret>
         {selectedSize === null ? 'SELECT SIZE' : selectedSize}
       </DropdownToggle>

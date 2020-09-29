@@ -7,6 +7,8 @@ import SelectSize from './SelectSize.jsx';
 function AddToCart({ selectedStyle, productId }) {
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedQuantity, setSelectedQuantity] = useState(1);
+  const [selectSizeOpen, setSelectSizeOpen] = useState(false);
+  const [selectSizeAlert, setSelectSizeAlert] = useState(false);
 
   const sessionId = 5;
 
@@ -15,6 +17,10 @@ function AddToCart({ selectedStyle, productId }) {
       user_session: sessionId,
       product_id: productId,
     });
+  };
+  const handleSelectSize = () => {
+    setSelectSizeOpen(true);
+    setSelectSizeAlert(true);
   };
 
   return (
@@ -25,6 +31,10 @@ function AddToCart({ selectedStyle, productId }) {
             skus={selectedStyle.skus}
             setSelectedSize={setSelectedSize}
             selectedSize={selectedSize}
+            selectSizeOpen={selectSizeOpen}
+            setSelectSizeOpen={setSelectSizeOpen}
+            selectSizeAlert={selectSizeAlert}
+            setSelectSizeAlert={setSelectSizeAlert}
           />
         </div>
         <div className="col-4">
@@ -37,7 +47,11 @@ function AddToCart({ selectedStyle, productId }) {
       </div>
       <div className="row">
         <div className="col-12">
-          <AddButton selectedSize={selectedSize} addToCart={addToCart} />
+          <AddButton
+            selectedSize={selectedSize}
+            addToCart={addToCart}
+            handleSelectSize={handleSelectSize}
+          />
         </div>
       </div>
     </div>
