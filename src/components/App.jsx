@@ -60,7 +60,7 @@ function App() {
 
   return (
     <div className="container">
-      <div className="row ajs-top-half no-gutters">
+      <div className="row ajs-top-half">
         <div className="col-md-8 col-12">
           <CarouselContainer photos={styles[styleIndex].photos} />
         </div>
