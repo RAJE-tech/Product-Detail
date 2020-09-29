@@ -9,7 +9,8 @@ function CustomerInteraction({
   styles,
   styleIndex,
   setStyleIndex,
-  ratings
+  ratings,
+  productId
 }) {
   return (
     <div className="ajs-customer-interaction-container">
@@ -24,7 +25,7 @@ function CustomerInteraction({
         setStyleIndex={setStyleIndex}
         styles={styles}
       />
-      <AddToCart selectedStyle={styles[styleIndex]} />
+      <AddToCart productId={productId} selectedStyle={styles[styleIndex]} />
     </div>
   );
 }

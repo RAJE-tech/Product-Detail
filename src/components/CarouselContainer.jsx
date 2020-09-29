@@ -46,7 +46,7 @@ const CarouselContainer = ({ photos }) => {
   });
 
   return (
-    <div className="ajs-carouselContainer">
+    <div className="ajs-carousel-container">
       <Carousel
         activeIndex={activeIndex}
         next={next}
