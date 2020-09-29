@@ -16,7 +16,8 @@ function App() {
       value: '',
     }],
   });
-  const getProduct = () => axios.get('http://52.26.193.201:3000/products/1')
+  const productId = 1;
+  const getProduct = () => axios.get(`http://52.26.193.201:3000/products/${productId}`)
     .then((response) => {
       setProduct(response.data);
     });
@@ -43,13 +44,13 @@ function App() {
       },
     },
   ]);
-  const getStyles = () => axios.get('http://52.26.193.201:3000/products/1/styles')
+  const getStyles = () => axios.get(`http://52.26.193.201:3000/products/${productId}/styles`)
     .then((response) => setStyles(response.data.results));
 
   const [styleIndex, setStyleIndex] = React.useState(0);
 
   const [ratings, setRatings] = React.useState(0);
-  const getRatings = () => axios.get('http://52.26.193.201:3000/reviews/1/meta')
+  const getRatings = () => axios.get(`http://52.26.193.201:3000/reviews/${productId}/meta`)
     .then((response) => setRatings(response.data.ratings));
 
   React.useEffect(() => {

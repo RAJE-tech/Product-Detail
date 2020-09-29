@@ -9,7 +9,7 @@ import {
 function QuantitySelector({ availableQuantity, selectedQuantity, setSelectedQuantity }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   let quantityArray = [];
-  for (let i = 1; i <= availableQuantity; i++) {
+  for (let i = 1; i <= (availableQuantity < 15 ? availableQuantity : 15); i++) {
     quantityArray.push(i);
   }
 
