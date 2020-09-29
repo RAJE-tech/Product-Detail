@@ -5,7 +5,7 @@ function AddToCart({ selectedStyle }) {
   const [selectedSize, setSelectedSize] = useState('');
 
   return (
-    <div>
+    <div className ="ajs-add-to-cart">
       <div className="row">
         <div className="col-9">
           <SelectSize skus={selectedStyle.skus} setSelectedSize={setSelectedSize} />
