@@ -14,7 +14,7 @@ function StyleSelector({ styles, setStyleIndex, styleIndex }) {
   const classes = useStyles();
 
   return (
-    <div className="row style-selector">
+    <div className="row ajs-style-selector">
       {styles.map((style, index) => {
         return (
           <div key={style.style_id} className="col-sm-3 col-4 ajs-style-btn">

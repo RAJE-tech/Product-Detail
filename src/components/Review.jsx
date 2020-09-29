@@ -11,7 +11,7 @@ function Review({ ratings }) {
   const avgRating = weightedTotal / total;
 
   return (
-    <div className={total === 0 || NaN ? 'hidden' : ''}>
+    <div className={total === 0 || NaN ? 'ajs-hidden' : ''}>
       <Rating
         name="simple-controlled"
         value={avgRating}

@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { Dropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
+import {
+  Dropdown,
+  DropdownMenu,
+  DropdownToggle,
+  DropdownItem
+} from 'reactstrap';
 
 function SelectSize({ skus, setSelectedSize }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
