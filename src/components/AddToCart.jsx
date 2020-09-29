@@ -27,7 +27,7 @@ function AddToCart({ selectedStyle, productId }) {
     <div className="ajs-add-to-cart">
       {(selectSizeAlert === true ? <div className="select-size-alert">Please select a size.</div> : <div />)}
       <div className="row">
-        <div className="col-8">
+        <div className="col-sm-8 col-12 ajs-add-to-cart-first-row">
           <SelectSize
             skus={selectedStyle.skus}
             setSelectedSize={setSelectedSize}
@@ -38,7 +38,7 @@ function AddToCart({ selectedStyle, productId }) {
             setSelectSizeAlert={setSelectSizeAlert}
           />
         </div>
-        <div className="col-4">
+        <div className="col-sm-4 col-12 ajs-add-to-cart-first-row">
           <QuantitySelector
             selectedQuantity={selectedQuantity}
             availableQuantity={selectedStyle.skus[selectedSize]}
