@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SelectSize from './SelectSize.jsx';
 
-function Review(props) {
+function AddToCart({ selectedStyle }) {
+  const [selectedSize, setSelectedSize] = useState('');
+
   return (
-    <div>ADD TO CART</div>
+    <div className ="ajs-add-to-cart">
+      <div className="row">
+        <div className="col-9">
+          <SelectSize skus={selectedStyle.skus} setSelectedSize={setSelectedSize} />
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default Review;
+export default AddToCart;
