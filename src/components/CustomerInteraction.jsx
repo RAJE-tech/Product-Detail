@@ -24,7 +24,7 @@ function CustomerInteraction({
         setStyleIndex={setStyleIndex}
         styles={styles}
       />
-      <AddToCart />
+      <AddToCart selectedStyle={styles[styleIndex]} />
     </div>
   );
 }
