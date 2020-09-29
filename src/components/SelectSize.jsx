@@ -32,17 +32,14 @@ function SelectSize({
     );
   }
   return (
-    <div>
-      {(selectSizeAlert === true ? <div className="select-size-alert">Please select a size.</div> : <div />)}
-      <Dropdown isOpen={selectSizeOpen} toggle={toggle}>
-        <DropdownToggle caret>
-          {selectedSize === null ? 'SELECT SIZE' : selectedSize}
-        </DropdownToggle>
-        <DropdownMenu>
-          {Object.keys(skus).map((size) => <DropdownItem onClick={() => dropdownClickHandler(size)} key={size}>{size}</DropdownItem>)}
-        </DropdownMenu>
-      </Dropdown>
-    </div>
+    <Dropdown isOpen={selectSizeOpen} toggle={toggle}>
+      <DropdownToggle caret>
+        {selectedSize === null ? 'SELECT SIZE' : selectedSize}
+      </DropdownToggle>
+      <DropdownMenu>
+        {Object.keys(skus).map((size) => <DropdownItem onClick={() => dropdownClickHandler(size)} key={size}>{size}</DropdownItem>)}
+      </DropdownMenu>
+    </Dropdown>
   );
 }
 export default SelectSize;

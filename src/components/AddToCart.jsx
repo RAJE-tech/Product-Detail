@@ -25,6 +25,7 @@ function AddToCart({ selectedStyle, productId }) {
 
   return (
     <div className="ajs-add-to-cart">
+      {(selectSizeAlert === true ? <div className="select-size-alert">Please select a size.</div> : <div />)}
       <div className="row">
         <div className="col-8">
           <SelectSize
