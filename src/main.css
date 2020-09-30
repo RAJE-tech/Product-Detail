@@ -102,13 +102,6 @@
     width: 80%;
   }
 }
-@media(min-width: 576px){
-  .ajs-vr-inside{
-    height: 80%;
-    width: 5px;
-    background-color: #343434;
-  }
-}
 .ajs-product-overview{
   display: flex;
   flex-direction: row;
@@ -156,4 +149,11 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media(min-width: 576px){
+  .ajs-vr-inside{
+    height: 80%;
+    width: 5px;
+    background-color: #343434;
+  }
 }
