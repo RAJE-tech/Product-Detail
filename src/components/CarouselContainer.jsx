@@ -59,8 +59,18 @@ const CarouselContainer = ({ photos }) => {
           onClickHandler={goToIndex}
         />
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        <CarouselControl 
+          className={activeIndex === 0 ? 'ajs-hidden' : ''}
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+          />
+        <CarouselControl
+          className={activeIndex === items.length - 1 ? 'ajs-hidden' : ''}
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
       </Carousel>
     </div>
   );
