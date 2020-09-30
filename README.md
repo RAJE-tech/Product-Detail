@@ -1,1 +1,1 @@
-# Related Items & Comparisons
+# Product Info
