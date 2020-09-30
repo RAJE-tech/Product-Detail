@@ -140,5 +140,16 @@
   padding: 2%
 }
 .ajs-add-to-cart .dropdown{
-  margin-bottom: 10%;
+  margin-bottom: 20px;
+}
+.ajs-prices{
+  display: flex;
+  flex-direction: row;
+}
+.ajs-sale{
+  color: red;
+}
+.ajs-struck{
+  text-decoration: line-through;
+  margin-right: 10px;
 }
