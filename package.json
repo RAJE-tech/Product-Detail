@@ -30,6 +30,7 @@
     "bootstrap": "^4.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-share": "^4.3.0",
     "react-test-renderer": "^16.13.1",
     "reactstrap": "^8.6.0",
     "webpack-dev-server": "^3.11.0"
