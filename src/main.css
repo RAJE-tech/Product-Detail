@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 500px;
+  height: 550px;
 }
 .ajs-carousel-container .carousel{
   width:100%;
@@ -61,7 +61,6 @@
 .ajs-style-selector{
   height: auto;
   overflow: visible;
-  padding: 15px 0 0 0;
 }
 .ajs-style-btn{
   margin: 10px 0 10px 0
@@ -80,15 +79,81 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
+}
+.ajs-feature{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+  align-items: center;
+  height: 100%;
+  margin: 5%;
+  justify-content: center;;
+}
+.ajs-feature-title{
+  font-weight: 900;
+}
+.ajs-feature div{
+  padding: 1% 5% 1% 0;
+}
+@media(max-width: 576px){
+  .ajs-vr{
+    height: 5px;
+    background-color: #343434;
+    width: 80%;
+  }
+}
+.ajs-product-overview{
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  justify-content: center;
+}
+.ajs-product-description{
+  display: flex;
+  align-items: center;
+}
+.ajs-product-description div{
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+.ajs-slogan{
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.ajs-feature img{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 .select-size-alert{
-  background-color: #fff9c4;
-  padding: 10px;
-}
-.ajs-add-to-cart-first-row{
-  margin-bottom: 5%;
-}
-.ajs-add-to-cart .show{
   width: 100%;
+  background-color: #fff9c4;
+  padding: 2%
+}
+.ajs-add-to-cart .dropdown{
+  margin-bottom: 20px;
+}
+.ajs-prices{
+  display: flex;
+  flex-direction: row;
+}
+.ajs-sale{
+  color: red;
+}
+.ajs-struck{
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+.ajs-review{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media(min-width: 576px){
+  .ajs-vr-inside{
+    height: 80%;
+    width: 5px;
+    background-color: #343434;
+  }
 }

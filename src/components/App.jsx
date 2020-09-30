@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import CarouselContainer from './CarouselContainer.jsx';
-import CustomerInteraction from './CustomerInteraction.jsx'
+import CustomerInteraction from './CustomerInteraction.jsx';
+import ProductOverview from './ProductOverview.jsx';
 
 function App() {
   const [product, setProduct] = React.useState({
@@ -74,6 +75,9 @@ function App() {
             ratings={ratings}
             productId={productId}
           />
+        </div>
+        <div className="col-12">
+          <ProductOverview product={product}/>
         </div>
       </div>
     </div>
