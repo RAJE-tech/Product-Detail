@@ -29,7 +29,7 @@ function QuantitySelector({ availableQuantity, selectedQuantity, setSelectedQuan
         {selectedQuantity}
       </DropdownToggle>
       <DropdownMenu>
-        {quantityArray.map((quantity) => <DropdownItem onClick={() => setSelectedQuantity(quantity)} key={quantity}>{quantity}</DropdownItem>)}
+        {quantityArray.map((quantity) => <DropdownItem className="ajs-dropdown-item" onClick={() => setSelectedQuantity(quantity)} key={quantity}>{quantity}</DropdownItem>)}
       </DropdownMenu>
     </Dropdown>
   );

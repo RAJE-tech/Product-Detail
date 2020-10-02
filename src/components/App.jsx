@@ -17,7 +17,7 @@ function App() {
       value: '',
     }],
   });
-  const productId = 8;
+  const productId = 1;
   const getProduct = () => axios.get(`http://52.26.193.201:3000/products/${productId}`)
     .then((response) => {
       setProduct(response.data);
@@ -65,14 +65,14 @@ function App() {
   return (
     <div className="container">
       <div className="row ajs-top-half">
-        <div className={carouselExpanded ? 'col-12 ajs-carousel-expanded' : 'col-12 col-md-8'}>
+        <div className='col-12 col-md-8'>
           <CarouselContainer
             photos={styles[styleIndex].photos}
             setCarouselExpanded={setCarouselExpanded}
             carouselExpanded={carouselExpanded}
           />
         </div>
-        <div className={carouselExpanded ? 'col-md-4 col-12 ajs-magnifier-hidden' : 'col-md-4 col-12'}>
+        <div className='col-md-4 col-12'>
           <CustomerInteraction
             product={product}
             styles={styles}

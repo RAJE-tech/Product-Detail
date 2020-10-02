@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Magnifier from 'react-magnifier';
 import {
   Carousel,
   CarouselItem,
@@ -36,16 +37,12 @@ const CarouselContainer = ({ photos, carouselExpanded, setCarouselExpanded }) =>
 
   const slides = items.map((item) => {
     return (
-      <CarouselItem
+      <CarouselItem 
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <ZoomOption
-          src={item.src}
-          carouselExpanded={carouselExpanded}
-          setCarouselExpanded={setCarouselExpanded}
-        />
+        <Magnifier src={item.src} mgHeight={200} mgWidth={200} />
       </CarouselItem>
     );
   });

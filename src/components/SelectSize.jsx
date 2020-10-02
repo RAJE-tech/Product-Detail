@@ -37,7 +37,14 @@ function SelectSize({
         {selectedSize === null ? 'SELECT SIZE' : selectedSize}
       </DropdownToggle>
       <DropdownMenu>
-        {Object.keys(skus).map((size) => <DropdownItem onClick={() => dropdownClickHandler(size)} key={size}>{size}</DropdownItem>)}
+        {Object.keys(skus).map((size, index) => {
+          return (
+            <div key={size}>
+              <DropdownItem className="ajs-dropdown-item" onClick={() => dropdownClickHandler(size)}>{size}</DropdownItem>
+              {index !== Object.keys(skus).length - 1 ? <DropdownItem divider /> : <div />}
+            </div>
+          );
+        })}
       </DropdownMenu>
     </Dropdown>
   );

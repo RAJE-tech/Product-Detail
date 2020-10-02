@@ -1,9 +1,13 @@
-/* .ajs-carousel-container .carousel-item.active, .carousel-item-left, .carousel-item-right{
+ body{
+   background-color: #f1f1f1;
+ }
+ .ajs-carousel-container .carousel-item.active, .carousel-item-left, .carousel-item-right{
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 550px;
 }
+/*
 .ajs-carousel-container .carousel{
   width:100%;
   height: auto;
@@ -12,11 +16,11 @@
   flex-direction: row;
   justify-content: center;
 } */
-/* .ajs-carousel-container img{
+.ajs-carousel-container img{
   max-height: 100%;
   max-width: 100%;
   object-fit: scale-down;
-} */
+}
 /* .ajs-indicator-container .react-multi-carousel-list{
   justify-content: center;
 } */
@@ -81,6 +85,8 @@
 }
 .ajs-style-btn{
   margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
 }
 .ajs-top-half p{
   margin-bottom: 0;
@@ -138,15 +144,26 @@
   height: 25px;
   margin-right: 10px;
 }
+.ajs-add-to-cart .ajs-dropdown-item{
+  justify-content: center;
+}
 .select-size-alert{
   width: 100%;
   background-color: #fff9c4;
   padding: 2%;
   border: 2px solid #ffc1076e;
   border-radius: 10px 10px 0 0;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .ajs-add-to-cart .dropdown{
   margin-bottom: 20px;
+}
+.ajs-add-to-cart button{
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 
 }
 .ajs-prices{
   display: flex;
@@ -165,7 +182,7 @@
   text-overflow: ellipsis;
 }
 .ajs-carousel-container .magnifying-glass{
-  background-size: initial !important;
+  background-size: 1375px !important;
 }
 .ajs-carousel-container{
   background-color: black;
