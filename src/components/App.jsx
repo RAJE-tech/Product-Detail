@@ -17,7 +17,7 @@ function App() {
       value: '',
     }],
   });
-  const productId = 1;
+  const productId = 8;
   const getProduct = () => axios.get(`http://52.26.193.201:3000/products/${productId}`)
     .then((response) => {
       setProduct(response.data);
@@ -33,7 +33,7 @@ function App() {
       photos: [
         {
           thumbnail_url: null,
-          url: null,
+          url: '',
         },
       ],
       skus: {
@@ -45,12 +45,14 @@ function App() {
       },
     },
   ]);
-  const getStyles = () => axios.get(`http://52.26.193.201:3000/products/${productId}/styles`)
-    .then((response) => setStyles(response.data.results));
+  
 
   const [styleIndex, setStyleIndex] = React.useState(0);
-
   const [ratings, setRatings] = React.useState(0);
+  const [carouselExpanded, setCarouselExpanded] = React.useState(false);
+
+  const getStyles = () => axios.get(`http://52.26.193.201:3000/products/${productId}/styles`)
+    .then((response) => setStyles(response.data.results));
   const getRatings = () => axios.get(`http://52.26.193.201:3000/reviews/${productId}/meta`)
     .then((response) => setRatings(response.data.ratings));
 
@@ -63,10 +65,14 @@ function App() {
   return (
     <div className="container">
       <div className="row ajs-top-half">
-        <div className="col-md-8 col-12">
-          <CarouselContainer photos={styles[styleIndex].photos} />
+        <div className={carouselExpanded ? 'col-12 ajs-carousel-expanded' : 'col-12 col-md-8'}>
+          <CarouselContainer
+            photos={styles[styleIndex].photos}
+            setCarouselExpanded={setCarouselExpanded}
+            carouselExpanded={carouselExpanded}
+          />
         </div>
-        <div className="col-md-4 col-12">
+        <div className={carouselExpanded ? 'col-md-4 col-12 ajs-magnifier-hidden' : 'col-md-4 col-12'}>
           <CustomerInteraction
             product={product}
             styles={styles}

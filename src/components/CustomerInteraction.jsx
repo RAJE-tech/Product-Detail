@@ -1,10 +1,10 @@
 import {
   FacebookShareButton,
   TwitterShareButton,
-  PinterestShareButton,
+  RedditShareButton,
   FacebookIcon,
   TwitterIcon,
-  PinterestIcon,
+  RedditIcon,
 } from 'react-share';
 import React from 'react';
 import Review from './Review.jsx';
@@ -30,9 +30,9 @@ function CustomerInteraction({
         <TwitterShareButton className="col-4 col-md-3" url="http://localhost/3000">
           <TwitterIcon size={50} round />
         </TwitterShareButton>
-        <PinterestShareButton className="col-4 col-md-3" url="http://localhost/3000">
-          <PinterestIcon size={50} round />
-        </PinterestShareButton>
+        <RedditShareButton className="col-4 col-md-3" url="http://localhost/3000">
+          <RedditIcon size={50} round />
+        </RedditShareButton>
       </div>
       <LimitedInfo
         product={product}

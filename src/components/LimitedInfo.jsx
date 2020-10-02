@@ -5,7 +5,7 @@ function LimitedInfo({ product, styles, styleIndex }) {
   return (
     <div>
       {product.category.toUpperCase()}
-      <h2 className="ajs-product-name">Expanded Product Name</h2>
+      <h2 className="ajs-product-name">{product.name}</h2>
       <div className="ajs-prices">
         {(styles[styleIndex].sale_price !== '0' ? <div className="ajs-struck">${styles[styleIndex].original_price}</div> : <div />)}
         <p className={styles[styleIndex].sale_price !== '0' ? 'ajs-sale' : ''}>

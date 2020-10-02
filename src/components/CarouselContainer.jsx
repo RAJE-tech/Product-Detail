@@ -5,13 +5,14 @@ import {
   CarouselControl,
 } from 'reactstrap';
 import CarouselIndicators from './CarouselIndicators.jsx';
+import ZoomOption from './ZoomOption.jsx'
 
-const CarouselContainer = ({ photos }) => {
+const CarouselContainer = ({ photos, carouselExpanded, setCarouselExpanded }) => {
   const items = [];
   const thumbnails = [];
   for (let i = 0; i < photos.length; i++) {
     items.push({ src: photos[i].url });
-    thumbnails.push({ src: photos[i].thumbnail_url });
+    thumbnails.push({ src: photos[i].thumbnail_url, });
   }
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -40,7 +41,11 @@ const CarouselContainer = ({ photos }) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
+        <ZoomOption
+          src={item.src}
+          carouselExpanded={carouselExpanded}
+          setCarouselExpanded={setCarouselExpanded}
+        />
       </CarouselItem>
     );
   });
@@ -59,12 +64,12 @@ const CarouselContainer = ({ photos }) => {
           onClickHandler={goToIndex}
         />
         {slides}
-        <CarouselControl 
+        <CarouselControl
           className={activeIndex === 0 ? 'ajs-hidden' : ''}
           direction="prev"
           directionText="Previous"
           onClickHandler={previous}
-          />
+        />
         <CarouselControl
           className={activeIndex === items.length - 1 ? 'ajs-hidden' : ''}
           direction="next"

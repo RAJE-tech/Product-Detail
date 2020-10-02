@@ -6,7 +6,7 @@ function Features({ features }) {
       {features.map((feature) => {
         return (
           <div key={feature.feature} className="ajs-feature">
-            <img src="https://www.flaticon.com/svg/static/icons/svg/60/60731.svg"/>
+            {feature.value ? <div /> : <img alt="" src="https://www.flaticon.com/svg/static/icons/svg/60/60731.svg"/>}
             <div className="ajs-feature-title">
               {feature.feature + ':'}
             </div>
