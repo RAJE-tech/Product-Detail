@@ -17,7 +17,7 @@ function App() {
       value: '',
     }],
   });
-  const productId = 8;
+  const productId = 1;
   const getProduct = () => axios.get(`http://52.26.193.201:3000/products/${productId}`)
     .then((response) => {
       setProduct(response.data);
