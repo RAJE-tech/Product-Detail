@@ -20,6 +20,9 @@
 /* .ajs-indicator-container .react-multi-carousel-list{
   justify-content: center;
 } */
+body{
+  background-color: whitesmoke;
+}
 
 .ajs-indicator-highlight{
   height: 4px;
