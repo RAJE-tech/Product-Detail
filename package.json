@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "webpack -d --watch"
+    "build": "webpack -d --watch",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "react-inner-image-zoom": "^1.1.1",
     "react-magnifier": "^3.0.4",
     "react-multi-carousel": "^2.5.5",
+    "react-router-dom": "^5.2.0",
     "react-share": "^4.3.0",
     "react-test-renderer": "^16.13.1",
     "reactstrap": "^8.6.0",
