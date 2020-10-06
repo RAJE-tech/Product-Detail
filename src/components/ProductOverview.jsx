@@ -4,7 +4,7 @@ import Features from './Features.jsx';
 function ProductOverview({ product }) {
   return (
     <div className="ajs-product-overview container row no-gutters">
-      <div className="ajs-product-description col-12 col-sm-7">
+      <div className="ajs-product-description col-12 col-sm-8">
         <div>
           <div className="ajs-slogan">
             {product.slogan}
