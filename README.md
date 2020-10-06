@@ -14,7 +14,8 @@ This microservice creates a visually appealing UI to access information from, an
 ## Installation
 1. clone this repo
 2. run npm install in the root directory
-3. run npm stat to start the server on port 3001
-4. navigate to http://localhost:3001/index.html to view the product detail microservice
+3. navigate to /node_modules/react-inner-image-zoom/InnerImageZoom.js and set the initial state of isActive to true on line 235
+4. run npm start to start the server on port 3001
+5. navigate to http://localhost:3001/index.html to view the product detail microservice
 ## Future Enhancements
 The product and cart ids are currently hardcoded. In the future, they will be set via a url parameter.
