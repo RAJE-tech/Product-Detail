@@ -212,7 +212,7 @@ body{
 }
 .ajs-custom-right{
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(66, 66, 66, 0.5);
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -221,11 +221,11 @@ body{
   transition: all .5s;
 }
 .ajs-custom-right:hover{
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(66, 66, 66, 0.8);
 }
 .ajs-custom-left{
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(66, 66, 66, 0.5);
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -234,7 +234,7 @@ body{
   transition: all .5s;
 }
 .ajs-custom-left:hover{
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(66, 66, 66, 0.8);
 }
 @media(max-width: 576px){
   .ajs-vr{
