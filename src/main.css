@@ -118,7 +118,7 @@ body{
 .ajs-product-overview{
   display: flex;
   flex-direction: row;
-  padding: 2% 0 2% 0;
+  padding: 2% 5% 2% 5%;
   justify-content: center;
   width: 100%;
 }
@@ -244,6 +244,12 @@ body{
     height: 5px;
     background-color: #343434;
     width: 80%;
+  }
+  .ajs-product-description{
+    text-align: center;
+  }
+  .ajs-feature{
+    justify-content: center;
   }
 }
 @media(min-width: 576px){

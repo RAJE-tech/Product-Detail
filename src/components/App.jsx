@@ -68,7 +68,7 @@ function App({ base }) {
   }, []);
 
   return (
-    <div className="col">
+    <div className="container">
       <div className="row ajs-top-half">
         <div className={carouselExpanded ? 'col-12 ajs-carousel-expanded' : 'col-12 col-md-8'}>
           <CarouselContainer
