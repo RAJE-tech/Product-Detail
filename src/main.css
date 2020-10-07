@@ -251,6 +251,10 @@ body{
   .ajs-feature{
     justify-content: center;
   }
+  .ajs-style-btn{
+    display: flex;
+    justify-content: center;
+  }
 }
 @media(min-width: 576px){
   .ajs-vr-inside{
@@ -284,7 +288,7 @@ body{
   position: relative;
   overflow: hidden;
   display: flex;
-  cursor: zoom-in;
+  cursor: crosshair;
   height: 550px;
   width: 100%;
   justify-content: center;
