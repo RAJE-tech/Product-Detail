@@ -1,10 +1,11 @@
 import React from 'react';
 import axios from 'axios';
+import { useParams } from "react-router-dom";
 import CarouselContainer from './CarouselContainer.jsx';
 import CustomerInteraction from './CustomerInteraction.jsx';
 import ProductOverview from './ProductOverview.jsx';
 
-function App() {
+function App({ base }) {
   const [product, setProduct] = React.useState({
     id: 0,
     name: '',
@@ -17,7 +18,11 @@ function App() {
       value: '',
     }],
   });
-  const productId = 1;
+
+  let { productId } = useParams();
+  if (base === true) {
+    productId = 1;
+  }
   const getProduct = () => axios.get(`http://52.26.193.201:3000/products/${productId}`)
     .then((response) => {
       setProduct(response.data);
@@ -91,59 +96,3 @@ function App() {
 }
 
 export default App;
-
-// import React from "react";
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link,
-//   useParams
-// } from "react-router-dom";
-
-// Params are placeholders in the URL that begin
-// with a colon, like the `:id` param defined in
-// the route in this example. A similar convention
-// is used for matching dynamic segments in other
-// popular web frameworks like Rails and Express.
-
-// export default function ParamsExample() {
-//   return (
-//     <Router>
-//       <div>
-//         <h2>Accounts</h2>
-
-//         <ul>
-//           <li>
-//             <Link to="/netflix">Netflix</Link>
-//           </li>
-//           <li>
-//             <Link to="/zillow-group">Zillow Group</Link>
-//           </li>
-//           <li>
-//             <Link to="/yahoo">Yahoo</Link>
-//           </li>
-//           <li>
-//             <Link to="/modus-create">Modus Create</Link>
-//           </li>
-//         </ul>
-
-//         <Switch>
-//           <Route path="/:id" children={<Child />} />
-//         </Switch>
-//       </div>
-//     </Router>
-//   );
-// }
-
-// function Child() {
-//   // We can use the `useParams` hook here to access
-//   // the dynamic pieces of the URL.
-//   let { id } = useParams();
-
-//   return (
-//     <div>
-//       <h3>ID: {id}</h3>
-//     </div>
-//   );
-// }

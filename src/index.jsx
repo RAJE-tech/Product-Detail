@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import ParamsRouter from './components/ParamsRouter.jsx';
 import './main.css';
 
-ReactDOM.render(<App />, document.getElementById('productInfo'));
+ReactDOM.render(<ParamsRouter />, document.getElementById('productInfo'));
