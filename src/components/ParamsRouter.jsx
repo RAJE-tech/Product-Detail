@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useParams,
 } from 'react-router-dom';
 import App from './App.jsx'
 
