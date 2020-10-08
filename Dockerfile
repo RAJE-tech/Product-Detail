@@ -8,6 +8,8 @@ COPY . /src/product_detail
 
 RUN npm install
 
+RUN npm run pbuild
+
 EXPOSE 3001
 
 CMD [ "npm", "start" ]

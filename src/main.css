@@ -130,6 +130,7 @@ body{
   display: flex;
   flex-direction: column;
   margin: 2%;
+  width: 100%
 }
 .ajs-slogan{
   font-weight: 900;
@@ -156,6 +157,9 @@ body{
 }
 .ajs-sale{
   color: red;
+}
+.ajs-style-selector .MuiAvatar-root{
+  border: 2px solid grey;
 }
 .ajs-struck{
   text-decoration: line-through;
