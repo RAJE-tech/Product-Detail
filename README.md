@@ -9,7 +9,7 @@ This microservice creates a visually appealing UI to access information from, an
 - reactstrap
 - material UI
 #### Compiled and Transpiled with
-- webpack
+- webpack 
 - babel
 ## Installation
 1. clone this repo
