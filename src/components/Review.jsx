@@ -18,7 +18,7 @@ function Review({ ratings }) {
         precision={0.25}
         readOnly
       />
-      <a href="#">Read all reviews</a>
+      <a href="#reviews">Read all reviews</a>
     </div>
   );
 }
