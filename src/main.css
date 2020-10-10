@@ -19,7 +19,7 @@
   justify-content: center; 
 } */
 body{
-  background-color: whitesmoke;
+  background-color: #f1f1f1;
 }
 
 .ajs-indicator-highlight{
@@ -125,6 +125,7 @@ body{
 .ajs-product-description{
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .ajs-product-description div{
   display: flex;
@@ -258,6 +259,9 @@ body{
   .ajs-style-btn{
     display: flex;
     justify-content: center;
+  }
+  .ajs-product-description div{
+    width: 210%;
   }
 }
 @media(min-width: 576px){
