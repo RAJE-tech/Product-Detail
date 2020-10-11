@@ -10,11 +10,10 @@
   flex-direction: row;
   justify-content: center;
 }
-/* .ajs-carousel-container img{
-  max-height: 100%;
-  max-width: 100%;
+.magnifier img{
+  height: 550px;
   object-fit: scale-down;
-} */
+}
 /* .ajs-indicator-container .react-multi-carousel-list{
   justify-content: center; 
 } */
@@ -172,7 +171,7 @@ body{
   text-overflow: ellipsis;
 }
 .ajs-carousel-container .magnifying-glass{
-  background-size: initial !important;
+  background-size: auto 1375px !important;
 }
 .ajs-carousel-container{
   background-color: black;

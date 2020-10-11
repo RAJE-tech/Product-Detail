@@ -1,5 +1,8 @@
 import React from 'react';
+import { Fragment } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
+import Magnifier from 'react-magnifier';
+import Media from 'react-media';
 
 function ZoomOption({ carouselExpanded, setCarouselExpanded, src}) {
   if (src === null) {
@@ -18,7 +21,31 @@ function ZoomOption({ carouselExpanded, setCarouselExpanded, src}) {
     );
   }
   return (
-    <img className="ajs-small-image" onClick={() => setCarouselExpanded(!carouselExpanded)} src={src} />
+    <div>
+      <Media queries={{
+        mobile: "(max-width: 576px)",
+        computer: "(min-width: 577px)",
+      }}>
+        {matches => (
+          <Fragment>
+            {matches.mobile && <Magnifier src={src} mgHeight={200} mgWidth={200}/>}
+            {matches.computer && <img className="ajs-small-image" onClick={() => setCarouselExpanded(!carouselExpanded)} src={src} />}
+          </Fragment>
+        )}
+      </Media>
+    </div>
+    // <Media queries={
+    //   {
+    //     mobile:'(max-width: 576px)',
+    //     computer: '(min-width: 577px)',
+    //   }
+    // }
+    // >
+    //   <Fragment>
+    //     {matches.mobile && <Magnifier src={src} mgHeight={200} mgWidth={200}/>}
+    //     {matches.computer && <img className="ajs-small-image" onClick={() => setCarouselExpanded(!carouselExpanded)} src={src} />}
+    //   </Fragment>
+    // </Media>
   )
 }
 

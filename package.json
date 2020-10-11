@@ -40,6 +40,7 @@
     "react-dom": "^16.13.1",
     "react-inner-image-zoom": "^1.1.1",
     "react-magnifier": "^3.0.4",
+    "react-media": "^1.10.0",
     "react-multi-carousel": "^2.5.5",
     "react-router-dom": "^5.2.0",
     "react-share": "^4.3.0",
