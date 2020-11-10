@@ -1,7 +1,7 @@
 # Product Info
 
 
-This microservice creates a visually appealing UI to access information from, and post carts data to, the Greenfield API.  It is adaptive and works well with any sized device, including specific handling for mobile.
+This microservice creates a visually appealing UI to access information from, and post carts data to, the Greenfield API (https://gist.github.com/teddim/e9b76cd5b4fb617afeb6dfb65796d416#file-products_api-md).  It is adaptive and works well with any sized device, including specific handling for mobile.
 
 ## Tech Framework Used
 #### Built With
