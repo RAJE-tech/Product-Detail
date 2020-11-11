@@ -10,6 +10,8 @@ This microservice creates a visually appealing UI to access information from, an
 - react
 - reactstrap
 - material UI
+- react router
+- react media
 #### Compiled and Transpiled with
 - webpack 
 - babel
