@@ -6,7 +6,7 @@
 
 - handles several complex user interactions
 
-![Imgur](https://i.imgur.com/eFwtJyG.gif)
+![Imgur](https://i.imgur.com/GDfvjTu.gif)
 
 - responds to url parameters with the corresponding product
 
