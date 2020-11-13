@@ -4,7 +4,7 @@
 
 ## Acheivements and Optimizations
 
-- handled several complex user interactions
+- handles several complex user interactions
 
 ![Imgur](https://i.imgur.com/EjBPQ0j.gif)
 
