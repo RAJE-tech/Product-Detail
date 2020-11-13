@@ -10,11 +10,11 @@
 
 - responds to url parameters with the corresponding product
 
-![Imgur](https://i.imgur.com/0YuFfdI.gif)
+![Imgur](https://i.imgur.com/3Rn4GQa.gif)
 
 - responds gracefully to resizing
 
-![Imgur](https://i.imgur.com/1YMSNjK.gif)
+![Imgur](https://i.imgur.com/lGVw3nH.gif)
 
 ## Tech Framework Used
 #### Built With
