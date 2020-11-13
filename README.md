@@ -14,7 +14,7 @@
 
 - responds gracefully to resizing
 
-![Imgur](https://i.imgur.com/fA3dutD.gifv)
+![Imgur](https://i.imgur.com/fA3dutD.gif)
 
 ## Tech Framework Used
 #### Built With
