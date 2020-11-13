@@ -10,7 +10,7 @@
 
 - responds to url parameters with the corresponding product
 
-![Imgur](https://i.imgur.com/0YuFfdI.gifv)
+![Imgur](https://i.imgur.com/0YuFfdI.gif)
 
 - responds gracefully to resizing
 
