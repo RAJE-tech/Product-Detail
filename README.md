@@ -6,15 +6,15 @@
 
 - handled several complex user interactions
 
-[Imgur](https://i.imgur.com/EjBPQ0j.gifv)
+![Imgur](https://i.imgur.com/EjBPQ0j.gifv)
 
 - responds to url parameters with the corresponding product
 
-[Imgur](https://i.imgur.com/0YuFfdI.gifv)
+![Imgur](https://i.imgur.com/0YuFfdI.gifv)
 
 - responds gracefully to resizing
 
-[Imgur](https://i.imgur.com/Eb0v69C.gifv)
+![Imgur](https://i.imgur.com/Eb0v69C.gifv)
 
 ## Tech Framework Used
 #### Built With
