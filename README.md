@@ -6,7 +6,7 @@
 
 - handled several complex user interactions
 
-![Imgur](https://i.imgur.com/EjBPQ0j.gifv)
+![Imgur](https://i.imgur.com/EjBPQ0j.gif)
 
 - responds to url parameters with the corresponding product
 
@@ -14,7 +14,7 @@
 
 - responds gracefully to resizing
 
-![Imgur](https://i.imgur.com/Eb0v69C.gifv)
+![Imgur](https://i.imgur.com/Eb0v69C.gif)
 
 ## Tech Framework Used
 #### Built With
